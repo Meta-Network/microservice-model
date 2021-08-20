@@ -1,0 +1,28 @@
+{
+  "name": "@metaio/microservice-model",
+  "version": "1.0.1",
+  "description": "Meta Network 内部微服务的数据类型",
+  "keywords": [
+    "meta-network"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependenices": {},
+  "devDependencies": {
+    "@types/node": "^16.4.3",
+    "prettier": "^2.3.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.3.5"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Casimir Crystal <casimir.crystal.blue@outlook.com> (https://github.com/casimir-crystal/)"
+}
