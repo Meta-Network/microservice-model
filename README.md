@@ -1,6 +1,3 @@
-# @meta/microservice-errors
+# @meta/microservice-model
 
-Meta Network 内部微服务的错误类型。
-
-## Conventional Commits
-
+Meta Network 内部微服务的数据类型。
