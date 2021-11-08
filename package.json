@@ -1,6 +1,6 @@
 {
   "name": "@metaio/microservice-model",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Meta Network 内部微服务的数据类型",
   "keywords": [
     "meta-network"

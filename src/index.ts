@@ -4,14 +4,14 @@ export enum ServiceCode {
   CMS = 3,
 }
 
-export class MetaInternalResult {
-  statusCode: number;
+export class MetaInternalResult<T> {
+  statusCode?: number;
   serviceCode: ServiceCode;
-  retryable: boolean;
-  data?: any;
-  message: string;
+  retryable?: boolean;
+  data?: T;
+  message?: string;
 
-  constructor(init: Partial<MetaInternalResult> = {}) {
+  constructor(init: Partial<MetaInternalResult<T>> = {}) {
     this.statusCode = init.statusCode || 200;
     this.serviceCode = init.serviceCode;
     this.retryable = init.retryable || false;
